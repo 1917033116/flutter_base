@@ -1,0 +1,41 @@
+name: flutter_49_yzb
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flutter_plugin_system: ^1.0.2
+  dio: ^1.0.12
+  #本地存储shared_preferences
+  shared_preferences: ^0.4.3
+  #toast
+  fluttertoast: ^2.1.2
+  #极光
+  flutter_jpush: ^0.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+  - images/
+
