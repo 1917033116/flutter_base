@@ -111,46 +111,6 @@ class RegexUtils {
   }
 }
 
-///SharedPreferences 工具类
-class SpUtils {
-  static String IS_LOGIN = "isLogin";
-  static String NICK_NAME = "nick_name";
-  static String USER_ACCOUNT = "user_account";
-
-  static addString(String key, String value) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    await preferences.setString(key, value);
-  }
-
-  static addInt(String key, int value) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    await preferences.setInt(key, value);
-  }
-
-  static Future<String> getString(String key) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    String res = preferences.getString(key);
-    if (TextUtil.isEmpty(res)) {
-      res = "";
-    }
-    return res;
-  }
-
-  static addBool(String key, bool value) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    await preferences.setBool(key, value);
-  }
-
-  static Future<bool> getBool(String key) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    bool res = preferences.getBool(key);
-    if (res == null) {
-      res = false;
-    }
-    return res;
-  }
-}
-
 class ToastUtil {
   static showCenterShort(
     String msg,
